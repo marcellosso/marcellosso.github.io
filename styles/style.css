@@ -65,6 +65,7 @@ body {
 }
 
 .main-container .main-content hr {
+  width: 100%;
   border: 0;
   height: 1px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0)));
@@ -178,6 +179,47 @@ body {
   color: black;
 }
 
+.about-me hr {
+  width: 20%;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.about-me .about img {
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.33);
+          box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.33);
+}
+
+.about-me .about hr {
+  width: 10%;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 0;
+}
+
+.about-me .about .info {
+  margin-bottom: 0;
+}
+
+.about-me .about .text-about {
+  font-size: 2.5rem;
+}
+
+.about-me .about ul {
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.about-me .about ul .icon {
+  color: #b3b6b6;
+}
+
 .cards {
   height: 55%;
   display: -webkit-box;
@@ -186,6 +228,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.cards hr {
+  width: 20%;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .cards .card {
@@ -202,13 +254,13 @@ body {
   transition: .5s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards .card img:hover {
   -webkit-transition: .5s;
   transition: .5s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   opacity: 0.8;
 }
 
@@ -227,18 +279,18 @@ body {
   padding: 0.6rem 2rem;
   background: transparent;
   font-size: 1.2rem;
-  border: 2px solid white;
+  border: 2px solid #cccccc;
   color: black;
   position: relative;
   z-index: 2;
   -webkit-transition: .3 linear;
   transition: .3 linear;
-  border-radius: 10%;
+  border-radius: 14%;
 }
 
 .cards .card .card-body .card-link:before {
   content: '';
-  background: #98B9F2;
+  background: #cccccc;
   position: absolute;
   width: 0%;
   top: 0%;
@@ -267,9 +319,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -291,12 +343,34 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skills .react-skill {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.skills .react-skill .icon {
+  font-size: 4rem;
+}
+
+.skills .text-skill {
+  font-size: 1.7rem;
+}
+
+.skills hr {
+  width: 20%;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 @media (max-width: 960px) {

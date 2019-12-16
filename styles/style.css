@@ -180,7 +180,6 @@ body {
 
 .cards {
   height: 55%;
-  background: #ccdbe8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,6 +210,57 @@ body {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   opacity: 0.8;
+}
+
+.cards .card .card-body {
+  padding: 0.8rem 0;
+}
+
+.cards .card .card-body .card-text {
+  display: inline-block;
+  font-weight: 600;
+  color: black;
+}
+
+.cards .card .card-body .card-link {
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  background: transparent;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  color: black;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: .3 linear;
+  transition: .3 linear;
+  border-radius: 10%;
+}
+
+.cards .card .card-body .card-link:before {
+  content: '';
+  background: #98B9F2;
+  position: absolute;
+  width: 0%;
+  top: 0%;
+  left: 0;
+  height: 100%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  z-index: -1;
+  border-radius: 10%;
+}
+
+.cards .card .card-body .card-link:hover:before {
+  width: 100%;
+  color: white;
+}
+
+.cards .card .card-body .card-link:hover {
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  color: #black;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.48);
+          box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.48);
 }
 
 .cards .lorem1 {

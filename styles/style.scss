@@ -214,7 +214,7 @@ body {
 
 .cards {
     height: 55%;
-    background: #ccdbe8;
+    // background: #ccdbe8;
     // padding-top: 1.5rem;
     display: flex;
     // justify-content: center;
@@ -235,6 +235,53 @@ body {
                 transition: .5s;
                 transform: scale(1.1);
                 opacity: 0.8;
+            }
+        }
+        
+        .card-body {
+            padding: 0.8rem 0;
+
+            .card-text {
+                display: inline-block;
+                font-weight: 600;
+                color: black;
+            }
+
+            .card-link {
+                text-decoration: none;
+                padding: $padding-button;
+                background: transparent;
+                font-size: 1.2rem;
+                border: 2px solid white;
+                color: black;
+                position: relative;
+                z-index: 2;
+                transition: .3 linear;
+                border-radius: 10%;
+
+                &:before {
+                    content: '';
+                    background: #98B9F2;
+                    position: absolute;
+                    width: 0%;
+                    top: 0%;
+                    left: 0;
+                    height: 100%;
+                    transition: 0.3s linear;
+                    z-index: -1;
+                    border-radius: 10%;
+                }
+
+                &:hover:before {
+                    width: 100%;
+                    color: white;
+                }
+
+                &:hover {
+                    transition: 0.4s linear;
+                    color: #black;
+                    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.48);
+                }
             }
         }
 

@@ -163,6 +163,10 @@ body {
         font-size: 1.8rem;
         font-weight: 800;
         margin-right: 73.41px;
+
+        &:hover {
+            color: black;
+        }
     }
 
     #contact {
@@ -171,7 +175,8 @@ body {
         color: white;
         font-weight: 700;
         padding: $padding-button;
-        
+        transition: .7s;
+
         &:hover{
             transition: 0.7s;
             background: #7cbdf2;
@@ -219,15 +224,20 @@ body {
         // box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.48);
         background-color: transparent;
         border: 0;
-        
+        transition: .5s ease;
+
         img {
             box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.33);
+            transition: .5s;
+            backface-visibility: hidden;
 
             &:hover {
-                transition: 0.5s;
+                transition: .5s;
                 transform: scale(1.1);
+                opacity: 0.8;
             }
         }
+
     }
 
     // TODO ALL THIS ONLY ON LARGE

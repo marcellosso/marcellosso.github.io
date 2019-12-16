@@ -1,0 +1,250 @@
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+
+$secondary-color: #6cafe6;
+
+$padding-button: 0.6rem 2rem;
+
+// https://blog.caelum.com.br/10-mixins-sass-que-voce-deveria-usar-em-seus-projetos/
+
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin center($center: center, $flex: flex){
+    display: $flex;
+    justify-content: $center;
+    align-items: $center;
+}
+
+@mixin displayExact($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.header-video {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+
+    .video-wrap {
+        z-index: 0;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+
+        video {
+            min-width: 100%;
+            min-height: 100vh;
+        }
+    }
+
+    .overlay {
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #222423;
+        // background: rgb(98,97,103);
+        // background: linear-gradient(180deg, rgba(98,97,103,1) 0%, rgba(48,48,51,1) 35%, rgba(0,0,0,1) 100%);
+        opacity: 0.87;
+    }
+
+    .main-content {
+        z-index: 2;
+        color: white;
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+            letter-spacing: 1rem;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+        }
+
+        p {
+            margin-top: 0;
+            font-size: 1.3rem;
+            padding-bottom: 3rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: $padding-button;
+            background: transparent;
+            font-size: 1.2rem;
+            border: 2px solid white;
+            color: white;
+            position: relative;
+
+            &:before {
+                content: '';
+                background: white;
+                position: absolute;
+                width: 0%;
+                top: 0;
+                left: 0;
+                height: 100%;
+                transition: 0.3s linear;
+                z-index: -1;
+            }
+
+            &:hover:before {
+                width: 100%;
+                color: black;
+            }
+
+            &:hover {
+                transition: 0.4s linear;
+                color: #6cafe6;
+                box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.48);
+            }
+        }
+    }
+}
+
+.nav {
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    
+    a {
+        color: black;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: inline-block;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-right: 73.41px;
+    }
+
+    #contact {
+        background: #6cafe6;
+        // border-radius: 0.8rem;
+        color: white;
+        font-weight: 700;
+        padding: $padding-button;
+        
+        &:hover{
+            transition: 0.7s;
+            background: #7cbdf2;
+            box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.33);
+        }
+    }
+
+    .active {
+        // border-bottom: 0.5px solid $secondary-color;
+        // padding-bottom: 5px;
+        // font-weight: 800;
+    }
+
+    #about, #projects, #resume, #skills, #contact-list {
+        &:after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: $secondary-color;
+            transition: width .3s;
+        }
+
+        &:hover:after{
+            width: 100%;
+            transition: width .3s;
+        }
+
+        &:hover {
+            color: black;
+        }
+    }
+
+}
+
+.cards {
+    height: 55%;
+    background: #ccdbe8;
+    // padding-top: 1.5rem;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+
+    .card {
+        // box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.48);
+        background-color: transparent;
+        border: 0;
+        
+        img {
+            box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.33);
+
+            &:hover {
+                transition: 0.5s;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    // TODO ALL THIS ONLY ON LARGE
+    .lorem1{
+        @include displayExact(flex, flex-end, center);
+    }
+    .lorem2{
+        @include displayExact(flex, center, center);
+    }
+    .lorem3 {
+        @include displayExact(flex, flex-start, center);
+    }
+}
+
+@media(max-width: 960px){
+    .main-container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}

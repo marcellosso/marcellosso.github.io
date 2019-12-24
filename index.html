@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marcel Losso</title>
     <link rel="stylesheet" href="./styles/style.css">
@@ -14,7 +14,7 @@
 
 <body>
 
-    <header class="header-video main-container">
+    <header class="header-video main-container" id="main">
         <div class="video-wrap">
             <video src="src/videos/coding.mp4" autoplay="true" loop="true"></video>
         </div>
@@ -31,11 +31,11 @@
 
     <div class="container">
         <nav class="nav fixed">
-            <a class="nav-link logo d-none d-lg-inline-block" href="#">M</a>
+            <a class="nav-link logo d-none d-lg-inline-block" href="#main">M</a>
             <div class="mx-auto">
-                <a class="nav-link active" id="about" href="#">About</a>
-                <a class="nav-link pl-md-5" id="projects" href="#">Projects</a>
-                <a class="nav-link px-md-5" id="skills" href="#">Skills</a>
+                <a class="nav-link active" id="about" href="#aboutMe">About</a>
+                <a class="nav-link pl-md-5" id="projects" href="#projectsId">Projects</a>
+                <a class="nav-link px-md-5" id="skills" href="#skillsId">Skills</a>
                 <a class="nav-link" id="resume" href="#">Resume</a>
                 <a class="nav-link d-inline-block d-lg-none pl-0 pl-sm-2 pl-md-5" id="contact-list" href="#">Contact</a>
             </div>
@@ -75,7 +75,7 @@
         </div>
     </section>
 
-    <section class="cards">
+    <section class="cards" id="projectsId">
         <div class="container">
             <h2 class="display-4 text-center my-3">PROJECTS</h2>
             <hr>
@@ -153,11 +153,11 @@
         </div>
     </section>
 
-    <section class="skills">
-        <h2 class="display-3 text-center my-3">SKILLS</h2>
-        <hr>
-
+    <section class="skills" id="skillsId">
         <div class="container">
+            <h2 class="display-3 text-center my-3">SKILLS</h2>
+            <hr>
+
             <div class="row my-4">
                 <div class="col">
                     <div class="react-skill">
@@ -246,10 +246,10 @@
     </section>
 
     <section class="teste">
-        <h2 class="display-3 text-center my-3">TESTE</h2>
-        <hr>
-
         <div class="container">
+            <h2 class="display-3 text-center my-3">TESTE</h2>
+            <hr>
+
            <div class="row align-items-center">
                 <div class="col-lg-4 large-bg bg-primary">
                     <h3 class="display-4 text-center my-3">IMG</h3>
@@ -289,7 +289,7 @@
         </div>        
     </section>
 
-    <section class="about-meTeste mb-5">
+    <section class="about-meTeste mb-5" id="aboutMe">
         <div class="container">
             <h2 class="display-4 text-center my-3">ABOUT ME</h2>
             <hr>

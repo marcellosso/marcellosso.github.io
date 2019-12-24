@@ -161,6 +161,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    // transition: .4s;
+    // transition: all .3s ease-in-out;
     
     a {
         color: black;
@@ -213,6 +215,32 @@ body {
         }
     }
 
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: #222423;
+    width: 100%;
+    padding-right: 16px;
+    
+    a {
+        color: white;
+    }
+
+    #about, #projects, #resume, #skills, #contact-list, .logo {
+        &:hover {
+            color: white;
+        }
+    }
+
+    animation: anim 0.4s ease-in-out;
+
+    @keyframes anim {
+      from { top: -40px; }
+      to { top: 0px; }
+    }
 }
 
 .about-me, .about-meTeste {

@@ -435,3 +435,22 @@ body {
         padding-left: 3rem;
     }
 }
+
+@media(max-width: 360px){
+    .nav {
+        .nav-link {
+            padding-right: 8px;
+            padding-left: 0;
+            font-size: 1.03rem;
+        }
+
+        #about {
+            padding-left: 0;
+        }
+
+        #contact {
+            padding-right: 0;
+        }
+    }
+
+}

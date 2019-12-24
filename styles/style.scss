@@ -382,10 +382,10 @@ body {
     @include displayExact(block, center, start);
     background: #222423;
     margin-bottom: 0;
-    padding-top: 4rem;
+    padding-top: 6rem;
 
     hr {
-        @include hr(255, 20%);
+        @include hr(255, 15%);
     }
 }
 

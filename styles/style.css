@@ -345,6 +345,15 @@ body {
           box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.48);
 }
 
+.cards .modal .close {
+  position: absolute;
+  color: white;
+  z-index: 80;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 1;
+}
+
 .cards .lorem1 {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -335,6 +335,16 @@ body {
 
     }
 
+    .modal {
+        .close {
+            position: absolute; 
+            color: white; 
+            z-index: 80;
+            transform: translateY(50%);
+            opacity: 1;
+        }
+    }
+
     // TODO ALL THIS ONLY ON LARGE
     .lorem1{
         // @include displayExact(flex, flex-end, center);

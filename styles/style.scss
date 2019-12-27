@@ -220,7 +220,7 @@ body {
 .fixed {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 99;
     background: #222423;
     width: 100%;
     padding-right: 16px;
@@ -232,6 +232,12 @@ body {
     #about, #projects, #resume, #skills, #contact-list, .logo {
         &:hover {
             color: white;
+        }
+    }
+
+    #contact-list {
+        &:hover {
+            box-shadow: 3px 4px 5px 0px rgb(163, 163, 163);
         }
     }
 
@@ -292,12 +298,20 @@ body {
             transition: .5s;
             backface-visibility: hidden;
             object-fit: cover;
+            cursor: pointer;
 
+            // TODO TALVEZ TIRAR ESSE HOVER PRA DEIXAR SCALE NO CARD INTEIRO
             &:hover {
                 transition: .5s;
                 transform: scale(1.05);
                 opacity: 0.8;
             }
+        }
+
+        &:hover {
+            transition: .5s;
+            transform: scale(1.05);
+            // border: 1px solid rgba(199, 198, 198, 0.637);
         }
         
         .card-body {

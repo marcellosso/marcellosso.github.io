@@ -182,7 +182,7 @@ body {
 .fixed {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 99;
   background: #222423;
   width: 100%;
   padding-right: 16px;
@@ -196,6 +196,11 @@ body {
 
 .fixed #about:hover, .fixed #projects:hover, .fixed #resume:hover, .fixed #skills:hover, .fixed #contact-list:hover, .fixed .logo:hover {
   color: white;
+}
+
+.fixed #contact-list:hover {
+  -webkit-box-shadow: 3px 4px 5px 0px #a3a3a3;
+          box-shadow: 3px 4px 5px 0px #a3a3a3;
 }
 
 @-webkit-keyframes anim {
@@ -275,6 +280,7 @@ body {
           backface-visibility: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
 .cards .card img:hover {
@@ -283,6 +289,13 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   opacity: 0.8;
+}
+
+.cards .card:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .cards .card .card-body {

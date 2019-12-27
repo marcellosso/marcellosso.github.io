@@ -89,13 +89,62 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 justify-content-center justify-content-lg-start my-3 lorem1">
                         <div class="card" style="width: 20rem;">
-                            <img class="card-img-top" src="/src/imgs/macbook.jpg" alt="Imagem de capa do card">
+                            <a data-toggle="modal" data-target=".bd-example-modal-x1-1">
+                                <img class="card-img-top" src="/src/imgs/macbook.jpg" alt="Imagem de capa do card">
+                            </a>
                             <div class="card-body">
                                 <p class="card-text">Um exemplo de texto rápido para construir o título do card e
                                     fazer
                                     preencher o conteúdo do card.</p>
                                 <a href="#" class="card-link">Demo</a>
                                 <a href="#" class="card-link">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="modal fade bd-example-modal-x1-1" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                <div class="modal-content">
+                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src="src/imgs/htmlimg.jpg"
+                                                    alt="Primeiro Slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>SITE 1</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="src/imgs/php-code.jpg"
+                                                    alt="Segundo Slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>SITE 2</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="src/imgs/coding-mobile.jpg"
+                                                    alt="Terceiro Slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>SITE 3</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Anterior</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Próximo</span>
+                                        </a>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -342,11 +391,12 @@
         </div>
     </section>
 
-    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgClass">
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" class="svgClass">
         <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
     </svg>
     <section class="contactSection" id="contactId">
-        
+
 
         <div class="container">
             <h2 class="display-4 text-center my-3 text-light">Contact</h2>
@@ -357,10 +407,8 @@
 
     <footer></footer>
 
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

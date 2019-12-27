@@ -19,13 +19,11 @@ $(window).bind('scroll', function() {
         $('.nav').removeClass('animateIn');
         $('.nav').addClass('animateOut');
         $('.navbarC').addClass('container');
-        console.log('oi');
     } else {
         $('.navbarC').removeClass('container');
         $('.nav').addClass('fixed');
         $('.nav').removeClass('animateOut');
         $('.nav').addClass('animateIn');
-        console.log('oi2');
     }
 })
 

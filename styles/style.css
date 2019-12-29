@@ -255,7 +255,6 @@ body {
 }
 
 .cards {
-  height: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

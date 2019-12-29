@@ -428,13 +428,17 @@ body {
 
 .svgClass {
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .contactSection {
+    position: relative;
     @include displayExact(block, center, start);
     background: #222423;
     margin-bottom: 0;
     padding-top: 6rem;
+    height: 80vh;
 
     hr {
         @include hr(255, 15%);

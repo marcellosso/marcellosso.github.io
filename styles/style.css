@@ -456,6 +456,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-filter: drop-shadow(0 3px 1.5px grey);
+          filter: drop-shadow(0 3px 1.5px grey);
 }
 
 .contactSection {

@@ -283,6 +283,8 @@ body {
 }
 
 .cards {
+    background: #f5f4f2;
+
     // height: 55%;
     display: flex;
     align-items: center;
@@ -402,6 +404,9 @@ body {
 }
 
 .about-meTeste{
+
+    background: #f5f4f2;
+
     .container {
         .about {
             .imgdiv {
@@ -433,12 +438,12 @@ body {
 }
 
 .contactSection {
-    position: relative;
+    // position: relative;
     @include displayExact(block, center, start);
     background: #222423;
     margin-bottom: 0;
     padding-top: 6rem;
-    height: 80vh;
+    min-height: 80vh;
 
     hr {
         @include hr(255, 12%);
@@ -446,11 +451,12 @@ body {
 }
 
 body section {
+    position: relative;
     width: 100%;
     min-height: 100vh;
     @include center();
     flex-direction: row;
-    margin-bottom: 5%;
+    // margin-bottom: 5%;
 
     hr {
         @include hr(0, 20%);

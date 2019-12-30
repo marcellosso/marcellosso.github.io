@@ -469,7 +469,7 @@ body {
 }
 
 .contactSection hr {
-  width: 15%;
+  width: 12%;
   border: 0;
   height: 1px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0)));
@@ -478,7 +478,7 @@ body {
 
 body section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

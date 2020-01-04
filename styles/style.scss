@@ -288,6 +288,7 @@ body {
     // height: 55%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
     
     .card {
@@ -351,7 +352,6 @@ body {
     // TODO ALL THIS ONLY ON LARGE
     .lorem1{
         // @include displayExact(flex, flex-end, center);
-        height: 500%;
         @include displayExact(flex, flex-start, center);
     }
     .lorem2{

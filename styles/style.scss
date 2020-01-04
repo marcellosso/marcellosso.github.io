@@ -291,6 +291,7 @@ body {
 
     
     .card {
+        // height: 40%;
         background-color: transparent;
         border: 0;
         transition: .5s ease;
@@ -350,6 +351,7 @@ body {
     // TODO ALL THIS ONLY ON LARGE
     .lorem1{
         // @include displayExact(flex, flex-end, center);
+        height: 500%;
         @include displayExact(flex, flex-start, center);
     }
     .lorem2{
@@ -405,7 +407,7 @@ body {
 
 .about-meTeste{
 
-    background: #f5f4f2;
+    // background: #f5f4f2;
 
     .container {
         .about {

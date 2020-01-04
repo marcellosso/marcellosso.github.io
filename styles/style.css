@@ -355,6 +355,7 @@ body {
 }
 
 .cards .lorem1 {
+  height: 500%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,10 +425,6 @@ body {
   transition: .4s ease;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.about-meTeste {
-  background: #f5f4f2;
 }
 
 .about-meTeste .container .about .imgdiv {

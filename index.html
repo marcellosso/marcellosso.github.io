@@ -131,21 +131,22 @@
 
         <div class="container">
             <h2 class="display-4 text-center mt-5">PROJECTS</h2>
-            <hr>
+            <hr class="mb-5">
 
             <div class="cards-div">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 justify-content-center justify-content-lg-start my-3 lorem1">
+                    <div
+                        class="col-lg-4 col-md-6 justify-content-center justify-content-lg-start my-3 lorem1 align-items-start">
                         <div class="card" style="width: 20rem;">
                             <a data-toggle="modal" data-target=".bd-example-modal-x1-1">
                                 <img class="card-img-top" src="/src/imgs/macbook.jpg" alt="Imagem de capa do card">
                             </a>
                             <div class="card-body">
-                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e
-                                    fazer
-                                    preencher o conteúdo do card.</p>
-                                <a href="#" class="card-link">Demo</a>
-                                <a href="#" class="card-link">Source Code</a>
+                                <p class="card-text mb-4">Worked on this website in my last job. Developed multiple
+                                    pages
+                                    using HTML, CSS, JAVASCRIPT, PHP and JAVA</p>
+                                <a href="http://www.prodesan.com.br" class="card-link">Demo</a>
+                                <a class="card-link disabled">Source Code</a>
                             </div>
                         </div>
                         <div class="modal fade bd-example-modal-x1-1" tabindex="-1" role="dialog">
@@ -197,24 +198,24 @@
                     </div>
                     <div class="col-lg-4 col-md-6 my-3 lorem2">
                         <div class="card" style="width: 20rem;">
-                            <img class="card-img-top" src="/src/imgs/htmlimg2.jpg" alt="Imagem de capa do card">
+                            <img class="card-img-top no-img" src="/src/imgs/htmlimg2.jpg" alt="Imagem de capa do card">
                             <div class="card-body">
-                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e
-                                    fazer
-                                    preencher o conteúdo do card.</p>
-                                <a href="#" class="card-link">Demo</a>
-                                <a href="#" class="card-link">Source Code</a>
+                                <p class="card-text">Working on a REACT website that uses the youtube API to retrieve
+                                    information about a channel chosen by the user, all searched channels will be
+                                    displayed for everyone</p>
+                                <a class="card-link disabled">Demo</a>
+                                <a class="card-link disabled">Source Code</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 justify-content-center justify-content-lg-end my-3 lorem3">
+                    <div
+                        class="col-lg-4 col-md-6 justify-content-center justify-content-lg-end my-3 lorem3 align-items-start">
                         <div class="card" style="width: 20rem;">
-                            <img class="card-img-top" src="/src/imgs/img3.jpg" alt="Imagem de capa do card">
+                            <img class="card-img-top no-img" src="/src/imgs/img3.jpg" alt="Imagem de capa do card">
                             <div class="card-body">
-                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e
-                                    fazer
-                                    preencher o conteúdo do card.</p>
-                                <a href="#" class="card-link">Demo</a>
+                                <p class="card-text mb-4">A simple Weather Forecast App, Almost finished but it needs to
+                                    be polished. Made with React-Native</p>
+                                <a class="card-link disabled">Demo</a>
                                 <a href="#" class="card-link">Source Code</a>
                             </div>
                         </div>
@@ -265,7 +266,7 @@
             xmlns="http://www.w3.org/2000/svg" class="svgClass">
             <path d="M0 0 L100 100 L100 0 Z" fill="#dbdbd9" stroke="#dbdbd9"></path>
         </svg>
-        
+
         <div class="container">
             <h2 class="display-3 text-center mb-3">SKILLS</h2>
             <hr style="margin-bottom: 5rem;">
@@ -367,35 +368,44 @@
             <h2 class="display-4 text-center my-3 text-light">Contact</h2>
             <hr>
 
-            <div class="row input-container justify-content-center">
-                <div class="col-xs-12">
-                    <div class="styled-input wide">
-                        <input type="text" required />
-                        <label>Name</label> 
+            <!-- <form action="https://formspree.io/xayjdnod" id="contactForm" method="POST"> -->
+            <form action="https://mailthis.to/marcel.losso@gmail.com" id="contactForm" method="POST">
+                <div class="row input-container justify-content-center">
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <input type="text" required id="name" name="name" />
+                            <label>Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-flex justify-content-end">
+                        <div class="styled-input">
+                            <input type="text" required id="email" name="_replyto" />
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-flex justify-content-start">
+                        <div class="styled-input" style="float:right;">
+                            <input type="text" required id="cellphone" name="phone" />
+                            <label>Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <textarea required id="message" name="message"></textarea>
+                            <label>Message</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <button id="sendMessage" type="submit" style="color: white;" class="btn-lrg submit-btn">Send
+                        Message</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 d-flex justify-content-end">
-                    <div class="styled-input">
-                        <input type="text" required />
-                        <label>Email</label> 
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 d-flex justify-content-start">
-                    <div class="styled-input" style="float:right;">
-                        <input type="text" required />
-                        <label>Phone Number</label> 
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <div class="styled-input wide">
-                        <textarea required></textarea>
-                        <label>Message</label>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-center">
-                    <div class="btn-lrg submit-btn">Send Message</div>
-                </div>
-            </div>
+                <input type="hidden" name="_after" value="http://127.0.0.1:5501/" />
+                <input type="hidden" name="_confirmation" value="Sucesso!" />
+
+                <!-- https://mailthis.to/ <- USANDO NO MOMENTO -->
+                <!-- https://documentation.formspark.io/customization/redirection.html <- TESTAR -->
+            </form>
         </div>
 
         </div>

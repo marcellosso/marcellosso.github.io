@@ -314,6 +314,10 @@ body {
             }
         }
 
+        .no-img {
+            cursor: default;
+        }
+
         &:hover {
             transition: .5s;
             transform: scale(1.05);
@@ -336,6 +340,14 @@ body {
 
                 @include btnAnimation(rgb(63, 62, 62), white);
 
+            }
+
+            a.disabled {
+                pointer-events: none;
+                cursor: default;
+
+                background: rgb(63, 62, 62);
+                color: white;
             }
         }
 

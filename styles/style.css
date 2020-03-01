@@ -294,6 +294,10 @@ body {
   opacity: 0.8;
 }
 
+.cards .card .no-img {
+  cursor: default;
+}
+
 .cards .card:hover {
   -webkit-transition: .5s;
   transition: .5s;
@@ -346,6 +350,13 @@ body {
   color: white;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.48);
           box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.48);
+}
+
+.cards .card .card-body a.disabled {
+  pointer-events: none;
+  cursor: default;
+  background: #3f3e3e;
+  color: white;
 }
 
 .cards .modal .close {

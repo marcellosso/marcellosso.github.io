@@ -305,6 +305,10 @@ body {
           transform: scale(1.05);
 }
 
+.cards .card .imgHeight {
+  height: 30vh;
+}
+
 .cards .card .card-body {
   padding: 0.8rem 0;
 }

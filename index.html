@@ -24,7 +24,10 @@
         <div class="main-content">
             <h1 class="display-4">MARCEL LOSSO</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, adipisci.</p>
+            <p>Web & Mobile Front-End Developer</p>
+            <div class="githubIcon">
+                <a href="https://github.com/marcellosso" target="_blank"><i class="fab fa-github iconGit"></i></a>
+            </div>
             <a href="#aboutMe" class="btn">View More</a>
         </div>
     </header>
@@ -33,11 +36,12 @@
         <nav class="nav">
             <a class="nav-link logo d-none d-lg-inline-block" href="#main">M</a>
             <div class="mx-auto">
-                <a class="nav-link active" id="about" href="#aboutMe">About</a>
-                <a class="nav-link pl-md-5" id="projects" href="#projectsId">Projects</a>
-                <a class="nav-link px-md-5" id="skills" href="#skillsId">Skills</a>
-                <a class="nav-link" id="resume" href="#">Resume</a>
-                <a class="nav-link d-inline-block d-lg-none pl-0 pl-sm-2 pl-md-5" id="contact-list" href="#contactId">Contact</a>
+                <a class="nav-link p-0 p-sm-2 active" id="about" href="#aboutMe">About</a>
+                <a class="nav-link p-0 p-sm-2 pl-md-5" id="projects" href="#projectsId">Projects</a>
+                <a class="nav-link p-0 p-sm-2 px-md-5" id="skills" href="#skillsId">Skills</a>
+                <a class="nav-linkp-0 p-sm-2 " id="resume" href="src/resume/Marcel Losso Resume.pdf" target="_blank">Resume</a>
+                <a class="nav-link d-inline-block d-lg-none p-0 p-sm-2 pl-0 pl-sm-2 pl-md-5" id="contact-list"
+                    href="#contactId">Contact</a>
             </div>
             <a class="nav-link d-none d-lg-inline-block" id="contact" href="#contactId">Contact</a>
         </nav>
@@ -95,25 +99,25 @@
                     <div class="col-12 col-lg-7 pl-0 pr-0">
                         <div class="p-2 p-lg-3 text-light infoC d-flex align-items-center">
                             <div>
-                                <p class="info mb-5 mb-lg-5 mt-lg-0">Lorem ipsum dolor sit amet consectetur, adipisicing
-                                    elit. Temporibus quod dicta,
-                                    eos assumenda consequuntur magni eaque, autem alias accusantium inventore,
-                                    maiores corporis
-                                    ea voluptatum illum. Necessitatibus velit veritatis est, adipisci reprehenderit
-                                    architecto,
-                                    ex non error labore vel esse nesciunt expedita!</p>
+                                <p class="info mb-5 mb-lg-2 mt-lg-0">Hi, my name is Marcel, I'm a 19 years old developer
+                                    from Brazil. I've been in love with programming since I was a kid, and when I was 13
+                                    years old I started learning C++ by myself and through books. After some time I
+                                    begun to learn HTML & CSS, but I only decided to get deeper in this world after a
+                                    while. Today my preference is to develop websites and mobile apps, mostly front-end.
+                                    My favorite languages to use are HTML, CSS, JS, REACT and REACT-NATIVE. <span
+                                        class="d-none d-lg-block">PS: It's not me in the picture</span></p>
                                 <h3 class="display-4 text-about text-center">Achievements</h3>
-                                <hr class="mb-3 mb-lg-5">
+                                <hr class="mb-3 mb-lg-2">
                                 <ul class="achievements">
-                                    <li><i class="fas fa-trophy icon"></i> Achievement</li>
-                                    <li><i class="fas fa-trophy icon"></i> Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Eaque, obcaecati.</li>
-                                    <li><i class="fas fa-trophy icon"></i> Lorem ipsum dolor sit.</li>
-                                    <li><i class="fas fa-trophy icon"></i> Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit.</li>
-                                    <li><i class="fas fa-trophy icon"></i> Lorem ipsum dolor sit.</li>
-                                    <li><i class="fas fa-trophy icon"></i> Lorem ipsum dolor sit amet consectetur.
-                                    </li>
+                                    <li><i class="fas fa-trophy icon"></i> 1º Place at a Civil Service Exam for a Java
+                                        Developer position at a government institution - 2019</li>
+                                    <li><i class="fas fa-trophy icon"></i> 3rd place in a exam to join one of the
+                                        best private colleges of the state - 2018 (UNISANTOS)</li>
+                                    <li><i class="fas fa-trophy icon"></i> 100% Scholarship for computer science
+                                        major at UNISANTOS - 2018</li>
+                                    <li><i class="fas fa-trophy icon"></i> Accepted on a competitive public high
+                                        school - 2015 (ETEC AF)</li>
+                                    <li><i class="fas fa-trophy icon"></i> Participated in a couple of Competitive
                                 </ul>
                             </div>
                         </div>
@@ -125,16 +129,16 @@
 
     <section class="cards" id="projectsId">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="85" width="100%" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" class="svgClass">
+            xmlns="http://www.w3.org/2000/svg" class="svgClass d-none d-md-block">
             <path d="M0 -100 L0 100 L100 0 Z" fill="white" stroke="white"></path>
         </svg>
 
         <div class="container">
             <h2 class="display-4 text-center mt-5">PROJECTS</h2>
-            <hr class="mb-5">
+            <hr class="mb-2 mb-md-5">
 
             <div class="cards-div">
-                <div class="row">
+                <div class="row" style="width: 100%;">
                     <div
                         class="col-lg-4 col-md-6 justify-content-center justify-content-lg-start my-3 lorem1 align-items-start">
                         <div class="card" style="width: 20rem;">
@@ -150,7 +154,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6 my-3 lorem2 align-items-start">
                         <div class="card" style="width: 20rem;">
-                            <img class="card-img-top no-img imgHeight" src="/src/imgs/Web 1920 – 1.png" alt="Youtube App">
+                            <img class="card-img-top no-img imgHeight" src="/src/imgs/Web 1920 – 1.png"
+                                alt="Youtube App">
                             <div class="card-body">
                                 <p class="card-text">Working on a REACT website that uses the youtube API to retrieve
                                     information about a channel chosen by the user, all searched channels will be
@@ -163,12 +168,14 @@
                     <div
                         class="col-lg-4 col-md-6 justify-content-center justify-content-lg-end my-3 lorem3 align-items-start">
                         <div class="card" style="width: 20rem;">
-                            <img class="card-img-top no-img imgHeight" src="/src/imgs/weatherApp.png" alt="Weather Forecast App">
+                            <img class="card-img-top no-img imgHeight" src="/src/imgs/weatherApp.png"
+                                alt="Weather Forecast App">
                             <div class="card-body">
                                 <p class="card-text mb-4">A simple Weather Forecast App, Almost finished but it needs to
                                     be polished. Made with React-Native</p>
                                 <a class="card-link disabled" target="_blank">Demo</a>
-                                <a href="https://github.com/marcellosso/weather-app" target="_blank" class="card-link">Source Code</a>
+                                <a href="https://github.com/marcellosso/weather-app" target="_blank"
+                                    class="card-link">Source Code</a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +222,7 @@
 
     <section class="skills" id="skillsId">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="85" width="100%" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" class="svgClass">
+            xmlns="http://www.w3.org/2000/svg" class="svgClass d-none d-md-block">
             <path d="M0 0 L100 100 L100 0 Z" fill="#dbdbd9" stroke="#dbdbd9"></path>
         </svg>
 
@@ -256,54 +263,28 @@
                 </div>
             </div>
             <div class="row my-4">
-                <div class="col d-flex justify-content-end">
+                <div class="col">
                     <div class="react-skill">
-                        <i class="fab fa-react icon"></i>
-                        <h3 class="display-4 text-skill">React.JS</h3>
+                        <i class="fab fa-java icon"></i>
+                        <h3 class="display-4 text-skill">Java</h3>
                     </div>
                 </div>
                 <div class="col">
                     <div class="react-skill">
-                        <i class="fab fa-react icon"></i>
-                        <h3 class="display-4 text-skill">React.JS</h3>
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-start">
-                    <div class="react-skill">
-                        <i class="fab fa-react icon"></i>
-                        <h3 class="display-4 text-skill">React.JS</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-4">
-                <div class="col">
-                    <div class="react-skill">
-                        <i class="fab fa-node icon"></i>
-                        <h3 class="display-4 text-skill">Node.JS</h3>
+                        <i class="fab fa-php icon"></i>
+                        <h3 class="display-4 text-skill">PHP</h3>
                     </div>
                 </div>
                 <div class="col">
                     <div class="react-skill">
-                        <i class="fab fa-js-square icon"></i>
-                        <h3 class="display-4 text-skill">JavaScript</h3>
+                        <i class="fab fa-wordpress icon"></i>
+                        <h3 class="display-4 text-skill">Wordpress</h3>
                     </div>
                 </div>
                 <div class="col">
                     <div class="react-skill">
-                        <i class="fab fa-react icon"></i>
-                        <h3 class="display-4 text-skill">React.JS</h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="react-skill">
-                        <i class="fab fa-html5 icon"></i>
-                        <h3 class="display-4 text-skill">HTML</h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="react-skill">
-                        <i class="fab fa-css3-alt icon"></i>
-                        <h3 class="display-4 text-skill">CSS</h3>
+                        <i class="fab fa-bootstrap icon"></i>
+                        <h3 class="display-4 text-skill">Bootstrap</h3>
                     </div>
                 </div>
             </div>
@@ -323,7 +304,7 @@
             <form action="https://submit-form.com/6_Jtr_l9VEKbxi3_5PjRm" id="contactForm" target="_self">
                 <input type="hidden" name="_redirect" value="http://127.0.0.1:5501/#contactId" />
                 <div class="row input-container justify-content-center">
-                    <div class="col-xs-12">
+                    <div class="col-sm-12 d-flex justify-content-center">
                         <div class="styled-input wide">
                             <input type="text" required id="name" name="name" />
                             <label>Name</label>
@@ -341,7 +322,7 @@
                             <label>Phone Number</label>
                         </div>
                     </div> -->
-                    <div class="col-xs-12">
+                    <div class="col-sm-12 d-flex justify-content-center">
                         <div class="styled-input wide">
                             <textarea required id="message" name="message"></textarea>
                             <label>Message</label>
@@ -349,10 +330,10 @@
                     </div>
                     <div class="col-md-6 d-flex justify-content-center">
                         <button id="sendMessage" type="submit" style="color: white;" class="btn-lrg submit-btn">Send
-                        Message</button>
+                            Message</button>
                     </div>
                 </div>
-                
+
                 <input type="hidden" name="_email.subject" value="Someone is trying to contact you!" />
             </form>
         </div>

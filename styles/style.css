@@ -74,7 +74,21 @@ body {
 .main-container .main-content p {
   margin-top: 0;
   font-size: 1.3rem;
-  padding-bottom: 3rem;
+}
+
+.main-container .main-content .githubIcon {
+  margin-bottom: 2.4rem;
+}
+
+.main-container .main-content .githubIcon .iconGit {
+  font-size: 2rem;
+  color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.main-container .main-content .githubIcon .iconGit:hover {
+  font-size: 2.5rem;
 }
 
 .main-container .main-content .btn {
@@ -462,7 +476,7 @@ body {
 }
 
 .about-meTeste .container .about .infoC {
-  height: 450px;
+  height: 100%;
   background: #222423;
 }
 
@@ -625,14 +639,6 @@ textarea {
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
 }
 
-@media (max-width: 768px) {
-  .submit-btn {
-    width: 100%;
-    float: none;
-    text-align: center;
-  }
-}
-
 input[type=checkbox] + label {
   color: #ccc;
   font-style: italic;
@@ -654,13 +660,54 @@ input[type=checkbox]:checked + label {
   .nav .nav-link {
     padding-right: 8px;
     padding-left: 0;
-    font-size: 1.03rem;
+    font-size: 1.1rem;
   }
   .nav #about {
     padding-left: 0;
   }
   .nav #contact {
     padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards .container .cards-div .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .submit-btn {
+    width: 370px;
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .styled-input.wide {
+    width: 300px;
+    max-width: 100%;
+  }
+  .submit-btn {
+    width: 250px;
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .styled-input.wide {
+    width: 400px;
+    max-width: 100%;
+  }
+  .contactSection .container form .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards .card .card-body .card-link {
+    padding: 0.3rem 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
